@@ -77,4 +77,73 @@ console.log(Math.max(...palindro))
     }cont=0
  } */
  
+ /*
+Se tiene un arreglo myArray que contiene bloques de números. Los bloques pueden ser de cualquier largo, 
+los números contenidos están en el rango de 1 a 9 y se separan por un cero para definir los bloques. 
+Se deben ordenar los números de los bloques individualmente de menor a mayor e imprimir las secuencias 
+separando los bloques por un espacio. Por ejemplo, para el arreglo: (1,3,2,0,7,8,1,3,0,6,7,1) 
+la respuesta esperada es:
+123 1378 167  */
+
+//CON EL FOR DE TODA LA VIDA
+// let array = [1,3,2,0,7,8,1,3,0,6,7,1,0,7,6,5,0,1,2,4,5,0,6,5,4];
+// let arrayFull = [];
+// let newCadena = array.join("").split("0");
+// let cadenaFull="";
+
+// console.log(Array);
+//  for (let i=0; i<newCadena.length;i++){
+//     arrayFull=newCadena[i].split('');
+//     console.log(arrayFull);
+//     arrayFull.sort();
+//     console.log(arrayFull);
+//     cadenaFull+=" "+arrayFull.join("");
+//     console.log(cadenaFull);
+//  }
+
+
+//CON FOR EACH
+//  let array = [1,3,2,0,7,8,1,3,0,6,7,1,0,7,6,5,0,1,2,4,5,0,6,5,4];
+//  let arrayFull = [];
+//  let newCadena = array.join("").split("0");
+//  let cadenaFull="";
  
+//  newCadena.forEach((element) => {
+//      arrayFull=element.split('');
+//      console.log(arrayFull);
+//      arrayFull.sort();
+//      console.log(arrayFull);
+//      cadenaFull+=" "+arrayFull.join("");
+//      console.log(cadenaFull);
+//  });
+ 
+//  // CON MAP y FUNCION
+
+
+//  let array = [1,3,2,0,7,8,1,3,0,6,7,1,0,7,6,5,0,1,2,4,5,0,6,5,4];
+//  let newCadena = array.join("").split("0");
+//  let cadenaFull="";
+//  let arrayFull = newCadena.map( myFunction);
+//  function myFunction(arrayFull){
+//      arrayFull=arrayFull.split('');
+//      console.log(arrayFull);
+//      arrayFull.sort();
+//      console.log(arrayFull);
+//      cadenaFull+=" "+arrayFull.join("");    
+//  };
+//  console.log(cadenaFull);
+
+// SOLO CON MAP
+// let array = [1,3,2,0,7,8,1,3,0,6,7,1,0,7,6,5,0,1,2,4,5,0,6,5,4];
+// let newCadena = array.join("").split("0");
+// console.log(newCadena);
+// let cadenaFull="";
+// let arrayFull = newCadena.map( function(element){
+//     arrayFull=element.split('');
+//     console.log(arrayFull)
+//     arrayFull.sort();
+//     console.log(arrayFull)
+//     cadenaFull+=" "+arrayFull.join("");
+//     console.log(arrayFull)
+// });
+// console.log(cadenaFull);
